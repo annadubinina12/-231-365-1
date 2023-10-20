@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Обратная форма</title>
+    <link href="style.css" rel="stylesheet"  type = "text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <form method="POST" action="https://httpbin.org/post">
+    <fieldset>
+    <legend><b>Ваши данные</b></legend>
+    <label> Ваше фамилия: <input type="text" placeholder="Фамилия" required></label><br>
+    <label> Ваше имя: <input type="text" placeholder="Имя" required></label><br>
+    <label> Ваше отчество: <input type="text" placeholder="Очество" required></label><br>
+    <label> Ваш email: <input type="email" placeholder="Email" required></label><br>
+    <label>Текст сообщения:</label><br>
+    <label><textarea placeholder="Введите ваше сообщение" required></textarea></label>
+    <button type="reset">Очистить</button>
+    </fieldset>
+    <fieldset>
+      <legend><b>Проблема</b></legend>
+      <label><input type="file" value="Выберите файл"></label> 
+    </fieldset>
+    <fieldset>
+      <legend><b>Откуда узнали о нас?</b></legend>
+       <p><input  type="radio" >Интернет</p>
+       <p><input  type="radio" >Телевизор</p>
+       <p><input name="dzen" type="radio"  checked>Знакомые</p>
+       <p><input name="dzen" type="radio"  checked>Другой вариант</p>
+       <p><input type="submit" value="Выбрать"></p>
+    </fieldset>
+
+    <fieldset>
+      <legend><b>Обратная связь</b></legend>
+      <div >Тип обращения</div>
+      <select required="required">
+        <option value="">Выберите вариант</option>
+        <option>Жалоба</option>
+        <option>Предложение</option>
+      </select><br>
+    </fieldset>
+  <fieldset>
+    <legend><b>Согласие</b></legend>
+      <label>Даете согласие на обработку персональных данных?</label><br>
+        <input type="checkbox"><label>Нет</label><br>
+        <input type="checkbox" ><label>Да</label><br>
+        <button>Отправить</button>
+  </fieldset>
+  </form>
+</body>
+</html>

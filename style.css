@@ -1,0 +1,47 @@
+html{
+    font-family: 'AR One Sans', sans-serif;
+}
+body {
+    width: 1000px;
+    margin: 0 auto;
+    background-color:#8FBC8F  ;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: inline;
+    margin-right: 10px;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+}
+form{
+background-color:#e2ecd3;
+width:70%;
+margin:0 auto;
+padding:15px;
+}
